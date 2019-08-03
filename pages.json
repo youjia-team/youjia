@@ -1,0 +1,59 @@
+{
+    "pages" : [
+        //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
+        {
+            "path" : "pages/news/news",
+            "style" : {
+                "navigationBarTitleText" : "新闻"
+            }
+        },
+		{
+		    "path" : "pages/more/more",
+		    "style" : {
+		        "navigationBarTitleText" : "更多"
+		    }
+		},
+		{
+		    "path" : "pages/me/me",
+		    "style" : {
+		        "navigationBarTitleText" : "我的"
+		    }
+		},
+        {
+            "path" : "pages/login/login",
+            "style" : {
+				"navigationBarTitleText":"登录"
+			}
+        }
+    ],
+    "globalStyle" : {
+        "navigationBarTextStyle" : "white",
+        "navigationBarTitleText" : "uni-app",
+        "navigationBarBackgroundColor" : "#00CCFF",
+        "backgroundColor" : "#F8F8F8"
+    },
+	"tabBar": {
+		"color": "#A6A6A6",
+		"selectedColor": "#1296db",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/news/news",
+			"iconPath": "static/image/news.png",
+			"selectedIconPath": "static/image/news-active.png",
+			"text": "新闻"
+		}, {
+			"pagePath": "pages/more/more",
+			"iconPath": "static/image/more.png",
+			"selectedIconPath": "static/image/more-active.png",
+			"text": "更多"
+		},{
+			"pagePath": "pages/me/me",
+			"iconPath": "static/image/me.png",
+			"selectedIconPath": "static/image/me-active.png",
+			"text": "我的"
+		}
+		]
+	}
+}
