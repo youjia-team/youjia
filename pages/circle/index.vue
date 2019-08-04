@@ -1,18 +1,22 @@
 <template>
 	<view>
-		<h1>{{title}}</h1>
+		{{title}}
 	</view>
 </template>
 
 <script>
 	export default {
-		data () {
+		data() {
 			return {
-				title:"我的"
+				title: "同城圈"
 			}
+		},
+		methods: {
+			
 		}
 	}
 </script>
 
 <style>
+	@import url("../../static/css/common.css");
 </style>

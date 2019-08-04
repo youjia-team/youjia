@@ -22,5 +22,6 @@
 
 <style>
 	/* 自定义样式 */
+	@import url("../../static/css/common.css");
 	
 </style>

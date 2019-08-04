@@ -1,22 +1,24 @@
 <template>
-	<view>
-		<h1>{{title}}</h1>
-	</view>
+    <view>
+		{{title}}
+     </view>
 </template>
 
 <script>
 	export default {
 		data() {
 			return {
-				title: '更多'
+				title: '新闻'
 			}
 		},
+		onLoad() {
+
+		},
 		methods: {
-			
+
 		}
 	}
 </script>
-
 <style>
-
+	@import url("../../static/css/common.css");
 </style>

@@ -1,59 +1,111 @@
 {
-    "pages" : [
-        //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		
-        {
-            "path" : "pages/news/news",
-            "style" : {
-                "navigationBarTitleText" : "新闻"
-            }
-        },
+	"pages": [
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+
 		{
-		    "path" : "pages/more/more",
-		    "style" : {
-		        "navigationBarTitleText" : "更多"
-		    }
-		},
-		{
-		    "path" : "pages/me/me",
-		    "style" : {
-		        "navigationBarTitleText" : "我的"
-		    }
-		},
-        {
-            "path" : "pages/login/login",
-            "style" : {
-				"navigationBarTitleText":"登录"
+			"path": "pages/news/index",  // 新闻首页
+			"style": {
+				"navigationBarTitleText": "新闻",
+				/**使用 app-plus 原生导航**/
+				"app-plus": {
+					"titleNView": {
+						"type": "default",
+						/** default 默认背景 transparent 为透明 */
+						"searchInput": {
+							"backgroundColor": "rgba(231, 231, 231,.7)",
+							"borderRadius": "16px",
+							"placeholder": "搜你想看的",
+							"align": "left",
+							"disabled": true,
+							"placeholderColor": "#606266"
+						},
+						"buttons": [
+							/* {左边的扫描二维码的
+															"fontSrc": "/static/yticon.ttf",
+															"text": "\ue60d",
+															"fontSize": "26",
+															"color": "#303133",
+															"float": "left",
+															"background": "rgba(0,0,0,0)"
+														}, */
+							{
+								"type": "menu",
+								"fontSize": "32",
+								"float": "right"
+							}
+						]
+					}
+				}
 			}
-        }
-    ],
-    "globalStyle" : {
-        "navigationBarTextStyle" : "white",
-        "navigationBarTitleText" : "uni-app",
-        "navigationBarBackgroundColor" : "#00CCFF",
-        "backgroundColor" : "#F8F8F8"
-    },
+		},
+		{
+			"path": "pages/circle/index", // 同城圈首页
+			"style": {
+				"navigationBarTitleText": "同城圈"
+			}
+		},
+		{
+			"path": "pages/me/index",  // 我的首页
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/member/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/member/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		},
+		{
+			"path": "pages/member/forget",
+			"style": {
+				"navigationBarTitleText": "重置密码"
+			}
+		}, {
+			"path": "pages/remberbook/remberbook",
+			"style": {
+				"navigationBarTitleText": "记账本"
+			}
+		}, {
+			"path": "pages/circle/index",
+			"style": {
+				"navigationBarTitleText": "同城圈"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "友佳",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"enablePullDownRefresh": "true"
+	},
 	"tabBar": {
 		"color": "#A6A6A6",
 		"selectedColor": "#1296db",
-		"borderStyle": "black",
-		"backgroundColor": "#ffffff",
+		"borderStyle": "white",
+		"backgroundColor": "#F8F8F8",
 		"list": [{
-			"pagePath": "pages/news/news",
+			"pagePath": "pages/news/index",
 			"iconPath": "static/image/news.png",
 			"selectedIconPath": "static/image/news-active.png",
 			"text": "新闻"
 		}, {
-			"pagePath": "pages/more/more",
+			"pagePath": "pages/circle/index",
 			"iconPath": "static/image/more.png",
 			"selectedIconPath": "static/image/more-active.png",
-			"text": "更多"
-		},{
-			"pagePath": "pages/me/me",
+			"text": "同城圈"
+		}, {
+			"pagePath": "pages/me/index",
 			"iconPath": "static/image/me.png",
 			"selectedIconPath": "static/image/me-active.png",
 			"text": "我的"
-		}
-		]
+		}]
 	}
 }

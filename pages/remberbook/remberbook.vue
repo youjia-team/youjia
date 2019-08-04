@@ -1,17 +1,22 @@
 <template>
-	<view>{{appname}}</view>
+	<view>
+		
+	</view>
 </template>
 
 <script>
 	export default {
-		data () {
-			return{
-				appname: '友佳'
+		data() {
+			return {
 				
 			}
+		},
+		methods: {
+			
 		}
 	}
 </script>
 
 <style>
+
 </style>
