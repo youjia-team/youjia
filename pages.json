@@ -39,6 +39,27 @@
 			}
 		},
 		{
+		    "path" : "pages/news/details/details",
+		    "style" : {
+				"navigationBarTitleText" : "详情",
+				"app-plus": {
+					"navigationBarTextStyle": "white",
+					"bounce": "none"
+				}
+			}
+		},
+		{
+		    "path" : "pages/news/details/videoDetails",
+		    "style" : {
+				"navigationBarTitleText" : "",
+				"app-plus": {
+					"titleNView": false,
+					"navigationBarTextStyle": "white",
+					"bounce": "none"
+				}
+			}
+		},
+		{
 			"path": "pages/circle/index", // 同城圈首页
 			"style": {
 				"navigationBarTitleText": "同城圈"
