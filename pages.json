@@ -3,7 +3,7 @@
 		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 
 		{
-			"path": "pages/news/index",  // 新闻首页
+			"path": "pages/news/index/index",  // 新闻首页
 			"style": {
 				"navigationBarTitleText": "新闻",
 				/**使用 app-plus 原生导航**/
@@ -92,7 +92,7 @@
 		"borderStyle": "white",
 		"backgroundColor": "#F8F8F8",
 		"list": [{
-			"pagePath": "pages/news/index",
+			"pagePath": "pages/news/index/index",
 			"iconPath": "static/image/news.png",
 			"selectedIconPath": "static/image/news-active.png",
 			"text": "新闻"
