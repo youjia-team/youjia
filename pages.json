@@ -93,19 +93,19 @@
 			"style": {
 				"navigationBarTitleText": "记账本"
 			}
-		}, {
+		}/* , {
 			"path": "pages/circle/index",
 			"style": {
 				"navigationBarTitleText": "同城圈"
 			}
-		}
+		} */
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "友佳",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8",
-		"enablePullDownRefresh": "true"
+		"enablePullDownRefresh": true
 	},
 	"tabBar": {
 		"color": "#A6A6A6",
