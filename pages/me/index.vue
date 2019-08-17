@@ -16,5 +16,5 @@
  
 
 <style>
-	@import url("../../static/css/common.css");
+
 </style>
